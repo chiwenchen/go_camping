@@ -1,0 +1,18 @@
+%h2 Rental Product Index
+
+%table
+  %thead
+    %tr
+      %th 編號
+      %th 出租品項
+      %th 價錢
+      %th 品相
+  - @rental_products.each do |item|  
+    %tbody
+      %tr
+        %td= item.id
+        %td= item.item_name
+        %td= item.price   
+        %td= item.condition
+
+= link_to "露營地點", campsites_path 

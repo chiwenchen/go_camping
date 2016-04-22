@@ -1,0 +1,52 @@
+網站功能：
+
+1.  分享露營地點
+  1.1 即時天氣顯示&天氣預報
+  1.2 pin地點
+
+2.  開團功能
+  2.1 透過Line, Facebook揪團
+  2.2 分配工作，攜帶物品
+  2.3 投票挑選露營地點
+
+3.  提供出租店家資訊 (用nokogiri爬店家商品資訊)
+
+4.  論壇
+
+Model:
+
+  Rental - Item_Name, Price, Condition
+  User - Name, Email, Phone, Password
+  Campsite - Name, Address, Photo
+
+
+
+
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

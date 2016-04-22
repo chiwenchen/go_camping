@@ -1,0 +1,7 @@
+<h2>推薦一個露營地</h2>
+
+=simple_form_for @campsite do |f|
+  = f.input :name, label: '露營地'
+  = f.input :address
+  = f.association :city, include_blank: false
+  = f.button :submit

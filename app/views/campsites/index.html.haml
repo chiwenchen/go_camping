@@ -1,0 +1,25 @@
+露營地點
+
+= search_form_for @search do |f| 
+  = f.label :name_cont, "Name contains" 
+  = f.text_field :name_cont 
+  = f.submit "Search" 
+
+= paginate @campsites
+
+%table 
+  %thead
+    %tr
+      %th= t("campsite")
+      %th= t("address")
+      %th 目前氣溫(攝氏)
+      %th 目前天氣
+  - @campsites.each do |site|
+    %tbody
+      %tr
+        %td= site.name
+        %td= site.address
+        %td= site.weather[:temp]
+        %td= site.weather[:condition]
+
+=link_to 'New Campsite', new_campsite_path
